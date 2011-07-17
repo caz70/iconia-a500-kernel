@@ -517,7 +517,6 @@ static int tegra_ehci_setup(struct usb_hcd *hcd)
 	ehci->sbrn = 0x20;
 
 	ehci_reset(ehci);
-	tegra_ehci_post_reset(tegra->phy);
 
 	/*
 	 * Resetting the controller has the side effect of resetting the PHY.
